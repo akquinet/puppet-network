@@ -20,11 +20,11 @@ TYPE=Ethernet
 <% end -%>
 <% if !ethtool_opts.empty? %>ETHTOOL_OPTS="<%= ethtool_opts %>"
 <% end -%>
-<% if !dns1.empty? %>
-DNS1=<%= dns1 %>
+<% if !dns1.empty? %>DNS1=<%= dns1 %>
 <% end -%>
-<% if !dns2.empty? %>
-DNS2=<%= dns2 %>
+<% if !dns2.empty? %>DNS2=<%= dns2 %>
+<% end -%>
+<% if !dns3.empty? %>DNS3=<%= dns3 %>
 <% end -%>
 <% if !domain.empty? %>DOMAIN="<%= domain %>"<% end -%>
 

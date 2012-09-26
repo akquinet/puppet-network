@@ -30,9 +30,9 @@ class network {
 #   $ethtool_opts - optional
 #   $bonding_opts - optional
 #   $isalias      - optional
-#   $peerdns      - optional
 #   $dns1         - optional
 #   $dns2         - optional
+#   $dns3         - optional
 #   $domain       - optional
 #   $ensure       - required - up|down
 #
@@ -67,9 +67,9 @@ define network_if_base (
   $ethtool_opts = "",
   $bonding_opts = "",
   $isalias = false,
-  $peerdns = false,
   $dns1 = "",
   $dns2 = "",
+  $dns3 = "",
   $domain = "",
   $ensure
 ) {
